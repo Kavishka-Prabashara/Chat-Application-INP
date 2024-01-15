@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="clientRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="gradient" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="38.0" layoutY="566.0" prefHeight="28.0" prefWidth="254.0" />
+      <JFXButton layoutX="3.0" layoutY="567.0" stylesheets="@../style/style.css" text="📷" textFill="WHITE" />
+      <JFXButton layoutX="333.0" layoutY="567.0" stylesheets="@../style/style.css" text="📷" textFill="WHITE" />
+      <JFXButton layoutX="300.0" layoutY="567.0" stylesheets="@../style/style.css" text="😊" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="366.0" layoutY="567.0" stylesheets="@../style/style.css" text="🚀" textFill="WHITE" />
+   </children>
+</AnchorPane>
