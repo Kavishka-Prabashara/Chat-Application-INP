@@ -1,12 +1,12 @@
 .gradient{
-    -fx-background-color: linear-gradient(to right, #ffffff, #00a6ff);
+    -fx-background-color: linear-gradient(rgba(0, 166, 255, 0.7), rgb(255, 255, 255));
 }
 .text-field {
     -fx-background-color: transparent;
     -fx-background-insets: 0;
     -fx-padding: 0.166667em 0.666667em 0.25em 0.666667em; /* Adjust padding as needed */
-    -fx-text-fill: white; /* Set the text color to white */
-    -fx-border-color: #ffffff;
+    -fx-text-fill: #333333; /* Set the text color to white */
+    -fx-border-color: rgba(255, 255, 255, 0.32);
     -fx-border-width: 0 0 1 0;
 }
 
