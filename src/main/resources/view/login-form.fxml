@@ -7,13 +7,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="400.0" styleClass="gradient" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.playtech.chatapplicationinp.ClientAppInitializer">
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="400.0" styleClass="gradient" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.playtech.chatapplicationinp.Controller.Login">
    <children>
-      <ImageView fitHeight="296.0" fitWidth="382.0" layoutX="9.0" layoutY="77.0">
-         <image>
-            <Image url="@../assets/doodle-png.png" />
-         </image>
-      </ImageView>
       <TextField fx:id="txtUserName" layoutX="50.0" layoutY="427.0" prefHeight="30.0" prefWidth="300.0" styleClass="text-field" stylesheets="@../style/style.css" />
       <JFXButton fx:id="btnLogin" layoutX="133.0" layoutY="473.0" onAction="#btnLoginOnAction" prefHeight="30.0" prefWidth="134.0" stylesheets="@../style/style.css" text="Login" textFill="WHITE">
          <font>
@@ -23,6 +18,11 @@
       <ImageView fx:id="imgProPic" fitHeight="100.0" fitWidth="100.0" layoutX="150.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/user-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="285.0" fitWidth="375.0" layoutX="18.0" layoutY="80.0">
+         <image>
+            <Image url="@../assets/bgRemove.png" />
          </image>
       </ImageView>
       <JFXButton fx:id="btnAddPp" layoutX="179.0" layoutY="258.0" onAction="#btnAddPpOnAction" prefHeight="41.0" prefWidth="41.0" stylesheets="@../style/loginForm.css" text="📷" textFill="WHITE">

@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="clientRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="gradient" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.playtech.chatapplicationinp.ClientAppInitializer">
+<AnchorPane fx:id="clientRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="gradient" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.playtech.chatapplicationinp.Controller.Login">
    <children>
       <TextField fx:id="txtField" layoutX="38.0" layoutY="566.0" prefHeight="28.0" prefWidth="287.0" promptText="Type here..." styleClass="text-field" stylesheets="@../style/style.css" />
       <JFXButton fx:id="btnAddImage" layoutX="333.0" layoutY="567.0" stylesheets="@../style/style.css" text="📷" textFill="WHITE" />
