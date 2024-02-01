@@ -1,5 +1,5 @@
 .gradient{
-    -fx-background-color: linear-gradient(rgba(0, 166, 255, 0.7), rgb(255, 255, 255));
+    -fx-background-color: linear-gradient(rgb(16, 42, 67), rgb(16, 42, 67));
 }
 .text-field {
     -fx-background-color: transparent;

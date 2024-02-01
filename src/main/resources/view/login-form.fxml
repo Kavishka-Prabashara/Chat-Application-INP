@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="400.0" styleClass="gradient" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.playtech.chatapplicationinp.Controller.Login">
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.playtech.chatapplicationinp.controller.Login">
    <children>
       <TextField fx:id="txtUserName" layoutX="50.0" layoutY="427.0" prefHeight="30.0" prefWidth="300.0" styleClass="text-field" stylesheets="@../style/style.css" />
       <JFXButton fx:id="btnLogin" layoutX="133.0" layoutY="473.0" onAction="#btnLoginOnAction" prefHeight="30.0" prefWidth="134.0" stylesheets="@../style/style.css" text="Login" textFill="WHITE">

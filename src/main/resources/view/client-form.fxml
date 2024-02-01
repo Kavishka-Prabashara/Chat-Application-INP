@@ -2,23 +2,76 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="clientRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="gradient" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.playtech.chatapplicationinp.Controller.Login">
+<AnchorPane fx:id="clientRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.playtech.chatapplicationinp.controller.Client">
    <children>
-      <TextField fx:id="txtField" layoutX="38.0" layoutY="566.0" prefHeight="28.0" prefWidth="287.0" promptText="Type here..." styleClass="text-field" stylesheets="@../style/style.css" />
-      <JFXButton fx:id="btnAddImage" layoutX="333.0" layoutY="567.0" stylesheets="@../style/style.css" text="📷" textFill="WHITE" />
-      <JFXButton fx:id="btnEmojiPicker" layoutX="6.0" layoutY="567.0" stylesheets="@../style/style.css" text="😊" textFill="WHITE">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#414b4f80" height="38.0" layoutX="208.0" stroke="TRANSPARENT" strokeType="INSIDE" width="592.0" />
+      <ImageView fitHeight="518.0" fitWidth="592.0" layoutX="209.0" layoutY="39.0" opacity="0.4">
+         <image>
+            <Image url="@../assets/client.bg.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#414b4f80" height="38.0" layoutX="208.0" layoutY="560.0" stroke="TRANSPARENT" strokeType="INSIDE" width="592.0" />
+      <TextField fx:id="txtField" layoutX="248.0" layoutY="566.0" prefHeight="28.0" prefWidth="482.0" promptText="Type here..." styleClass="text-field" stylesheets="@../style/style.css" />
+      <JFXButton fx:id="btnAddImage" layoutX="733.0" layoutY="567.0" onAction="#btnAddImageOnAction" stylesheets="@../style/style.css" text="📷" textFill="WHITE" />
+      <JFXButton fx:id="btnEmojiPicker" layoutX="214.0" layoutY="567.0" onAction="#btnEmojiPickerOnAction" style="-fx-background-color: #FFFF00;" text="😊">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnSend" layoutX="366.0" layoutY="567.0" prefHeight="26.0" prefWidth="28.0" stylesheets="@../style/style.css" text="➤" textFill="WHITE">
+      <JFXButton fx:id="btnSend" layoutX="766.0" layoutY="567.0" onAction="#btnSendOnAction" prefHeight="26.0" prefWidth="28.0" stylesheets="@../style/style.css" text="➤" textFill="WHITE">
          <font>
             <Font name="525icons" size="12.0" />
          </font></JFXButton>
-      <JFXTextArea fx:id="txtChatArea" layoutX="9.0" layoutY="5.0" prefHeight="551.0" prefWidth="383.0" />
+      <Line endX="484.5999755859375" endY="1.0" layoutX="314.0" layoutY="38.0" startX="-105.49998474121094" startY="-0.4999961853027344" />
+      <AnchorPane layoutX="-1.0" prefHeight="600.0" prefWidth="208.0" styleClass="gradient" stylesheets="@../style/style.css">
+         <children>
+            <Label fx:id="lblClientName" layoutX="45.0" layoutY="2.0" prefHeight="35.0" prefWidth="160.0" text=" Client_Name" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="18.0" layoutY="565.0">
+               <image>
+                  <Image url="@../assets/message.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="clientProPic" fitHeight="35.0" fitWidth="37.0" layoutX="4.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+      <Line endX="-115.99998474121094" endY="-6.999996185302734" layoutX="324.0" layoutY="45.0" startX="-324.0" startY="-6.999996185302734" stroke="WHITE" />
+      <Label layoutX="70.0" layoutY="560.0" prefHeight="38.0" prefWidth="80.0" text="Play Chat" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="16.0" />
+         </font>
+      </Label>
+      <Line endX="-115.99998474121094" endY="-6.999996185302734" layoutX="324.0" layoutY="565.0" startX="-324.0" startY="-6.999996185302734" stroke="WHITE" />
+      <JFXTextArea fx:id="txtChatArea" layoutX="209.0" layoutY="40.0" prefHeight="518.0" prefWidth="585.0" />
+      <GridPane fx:id="paneGridforEmoji" layoutX="209.0" layoutY="385.0" prefHeight="174.0" prefWidth="183.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      
    </children>
 </AnchorPane>
