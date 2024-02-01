@@ -83,7 +83,7 @@ public class Login extends Application {
                     new Alert(Alert.AlertType.CONFIRMATION, "Login Successfully!!!").show();
                     clearFields();
 
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/client-form.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/client-chat-form.fxml"));
                     Parent root1 = (Parent) fxmlLoader.load();
 
                     // Get the controller of the Client class

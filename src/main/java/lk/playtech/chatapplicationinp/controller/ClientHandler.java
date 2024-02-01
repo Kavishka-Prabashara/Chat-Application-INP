@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
-
 import static lk.playtech.chatapplicationinp.controller.Server.clients;
 
 public class ClientHandler implements Runnable {
@@ -56,6 +55,12 @@ public class ClientHandler implements Runnable {
 
     // New: Set the client's name
     public void setClientName(String clientName) {
+        this.clientName = clientName;
+    }
+    public ClientHandler(Socket clientSocket, String clientName) throws IOException {
+        this.clientSocket = clientSocket;
+        this.outputStream = new ObjectOutputStream(clientSocket.getOutputStream());
+        this.inputStream = new ObjectInputStream(clientSocket.getInputStream());
         this.clientName = clientName;
     }
 }

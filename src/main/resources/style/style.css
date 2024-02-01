@@ -1,8 +1,8 @@
 .gradient{
-    -fx-background-color: linear-gradient(rgb(16, 42, 67), rgb(16, 42, 67));
+    -fx-background-color: linear-gradient(rgb(0, 123, 255), rgb(255, 255, 255));
 }
 .text-field {
-    -fx-background-color: transparent;
+    -fx-background-color: rgba(255, 255, 255, 0.63);
     -fx-background-insets: 0;
     -fx-padding: 0.166667em 0.666667em 0.25em 0.666667em; /* Adjust padding as needed */
     -fx-text-fill: #333333; /* Set the text color to white */
@@ -11,7 +11,7 @@
 }
 
 .text-field:hover {
-    -fx-background-color: rgba(0, 0, 0, 0.3); /* Change background color on hover */
+    -fx-background-color: rgb(255, 255, 255); /* Change background color on hover */
     -fx-border-color: #007bff;
 }
 

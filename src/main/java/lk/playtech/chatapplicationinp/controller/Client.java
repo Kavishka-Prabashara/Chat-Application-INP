@@ -1,7 +1,9 @@
 package lk.playtech.chatapplicationinp.controller;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextArea;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -43,6 +45,8 @@ public class Client {
 
     @FXML
     private ImageView clientProPic;
+    @FXML
+    private JFXComboBox<String> cblEmojiPicker;
 
     private static final String SERVER_IP = "127.0.0.1"; // Replace with your server's IP
     private static final int SERVER_PORT = 5555;
@@ -64,6 +68,14 @@ public class Client {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        cblEmojiPicker.setItems(FXCollections.observableArrayList(
+                "\ud83d\udc4d",
+                "\ud83d\udc99",
+                "\uD83D\uDE02",
+                "\uD83D\uDE0D",
+                "\uD83D\uDE0E",
+                "\ud83d\ude2d"
+                 ));
     }
 
     // New method: Set the client's name
